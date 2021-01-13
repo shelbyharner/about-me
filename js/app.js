@@ -14,7 +14,7 @@ alert('Welcome to my page ' + userName + '!');
 var questionOne = prompt('Do I live in Queen Anne?').toLowerCase();
 
 if(questionOne === 'yes' || questionOne === 'y') {
-  console.log('You are correct!')
+  // console.log('You are correct!')
   alert('You are correct!')
 } else {
   alert('Sorry, that is wrong.')
@@ -23,7 +23,7 @@ if(questionOne === 'yes' || questionOne === 'y') {
 var questionTwo = prompt('Do I have a tattoo?').toLowerCase();
 
 if(questionTwo === 'no' || questionTwo === 'n') {
-  console.log('Yes, that is correct!')
+  // console.log('Yes, that is correct!')
   alert('Yes, that is correct!')
 } else {
   alert('Nope, wrong.')
@@ -32,7 +32,7 @@ if(questionTwo === 'no' || questionTwo === 'n') {
 var questionThree = prompt('Do I have siblings?').toLowerCase();
 
 if(questionThree === 'yes' || questionThree === 'y') {
-  console.log('Yes!')
+  // console.log('Yes!')
   alert('Yes!')
 } else {
   alert('Oops! No.')
@@ -41,7 +41,7 @@ if(questionThree === 'yes' || questionThree === 'y') {
 var questionFour = prompt('Do I have a dog?').toLowerCase();
 
 if(questionFour === 'no' || questionFour === 'n') {
-  console.log('Great job!')
+  // console.log('Great job!')
   alert('Great job!')
 } else {
   alert('Oh, no.')
@@ -50,7 +50,7 @@ if(questionFour === 'no' || questionFour === 'n') {
 var questionFive = prompt('Do I love crafting?').toLowerCase();
 
 if(questionFive === 'yes' || questionFive === 'y') {
-  console.log('Yes, ' + userName + '! Good answer!')
+  // console.log('Yes, ' + userName + '! Good answer!')
   alert('Yes, ' + userName + '! Good answer!')
 } else {
   alert('Sorry, ' +userName + '. Incorrect.')
