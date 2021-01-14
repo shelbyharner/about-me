@@ -7,7 +7,6 @@ I built an app with a direct and powerful purpose. My app does all of the things
 ### Author: Shelby Harner
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
 * [CSS Reset](https://meyerweb.com/eric/tools/css/reset)
 * Any Links you used as reference
 
