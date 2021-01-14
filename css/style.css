@@ -3,6 +3,7 @@ header {
     text-align: center;
     font-size: 50px;
     text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -14,15 +15,12 @@ body {
     background-size: auto;
     background-color: thistle;
     font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
     font-size: 25px;
     font-style: bold;
-}
-
-div {
-    border: 10px royalblue;
 }
 
 ul {
