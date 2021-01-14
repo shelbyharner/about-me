@@ -11,45 +11,50 @@ alert('Welcome to my page ' + userName + '!');
 // answers can be yes, no, y, n - IN ANY CASE
 // alert response back to user with correct or incorrect message
 
-var questionOne = prompt('Do I live in Queen Anne?').toLowerCase();
+// question one
+var homeLocation = prompt('Do I live in Queen Anne?').toLowerCase();
 
-if(questionOne === 'yes' || questionOne === 'y') {
+if(homeLocation === 'yes' || homeLocation === 'y') {
   // console.log('You are correct!')
   alert('You are correct!')
 } else {
   alert('Sorry, that is wrong.')
 }
 
-var questionTwo = prompt('Do I have a tattoo?').toLowerCase();
+// question two
+var tattoo = prompt('Do I have a tattoo?').toLowerCase();
 
-if(questionTwo === 'no' || questionTwo === 'n') {
+if(tattoo === 'no' || tattoo === 'n') {
   // console.log('Yes, that is correct!')
   alert('Yes, that is correct!')
 } else {
   alert('Nope, wrong.')
 }
 
-var questionThree = prompt('Do I have siblings?').toLowerCase();
+// question three
+var siblings = prompt('Do I have siblings?').toLowerCase();
 
-if(questionThree === 'yes' || questionThree === 'y') {
+if(siblings === 'yes' || siblings === 'y') {
   // console.log('Yes!')
   alert('Yes!')
 } else {
   alert('Oops! No.')
 }
 
-var questionFour = prompt('Do I have a dog?').toLowerCase();
+// question four
+var petType = prompt('Do I have a dog?').toLowerCase();
 
-if(questionFour === 'no' || questionFour === 'n') {
+if(petType === 'no' || petType === 'n') {
   // console.log('Great job!')
   alert('Great job!')
 } else {
   alert('Oh, no.')
 }
 
-var questionFive = prompt('Do I love crafting?').toLowerCase();
+// question five
+var crafts = prompt('Do I love crafting?').toLowerCase();
 
-if(questionFive === 'yes' || questionFive === 'y') {
+if(crafts === 'yes' || crafts === 'y') {
   // console.log('Yes, ' + userName + '! Good answer!')
   alert('Yes, ' + userName + '! Good answer!')
 } else {
