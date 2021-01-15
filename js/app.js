@@ -58,5 +58,5 @@ if(crafts === 'yes' || crafts === 'y') {
   // console.log('Yes, ' + userName + '! Good answer!');
   alert('Yes, ' + userName + '! Good answer!');
 } else {
-  alert('Sorry, ' +userName + '. Incorrect.');
+  alert('Sorry, ' + userName + '. Incorrect.');
 }
