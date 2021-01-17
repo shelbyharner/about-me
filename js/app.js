@@ -7,6 +7,8 @@
 var userName = prompt('Greetings! What is your name?');
 alert('Welcome to my page ' + userName + '!');
 
+var score = 0;
+
 // prompt user with five yes or no questions
 // answers can be yes, no, y, n - IN ANY CASE
 // alert response back to user with correct or incorrect message
@@ -17,6 +19,7 @@ var homeLocation = prompt('Do I live in Queen Anne?').toLowerCase();
 if(homeLocation === 'yes' || homeLocation === 'y') {
   // console.log('You are correct!');
   alert('You are correct!');
+  score++;
 } else {
   alert('Sorry, that is wrong.');
 }
@@ -27,6 +30,7 @@ var tattoo = prompt('Do I have a tattoo?').toLowerCase();
 if(tattoo === 'no' || tattoo === 'n') {
   // console.log('Yes, that is correct!');
   alert('Yes, that is correct!');
+  score++;
 } else {
   alert('Nope, wrong.');
 }
@@ -37,6 +41,7 @@ var siblings = prompt('Do I have siblings?').toLowerCase();
 if(siblings === 'yes' || siblings === 'y') {
   // console.log('Yes!');
   alert('Yes!');
+  score++;
 } else {
   alert('Oops! No.');
 }
@@ -47,6 +52,7 @@ var petType = prompt('Do I have a dog?').toLowerCase();
 if(petType === 'no' || petType === 'n') {
   // console.log('Great job!');
   alert('Great job!');
+  score++;
 } else {
   alert('Oh, no.');
 }
@@ -57,6 +63,7 @@ var crafts = prompt('Do I love crafting?').toLowerCase();
 if(crafts === 'yes' || crafts === 'y') {
   // console.log('Yes, ' + userName + '! Good answer!');
   alert('Yes, ' + userName + '! Good answer!');
+  score++;
 } else {
   alert('Sorry, ' + userName + '. Incorrect.');
 }
@@ -70,6 +77,7 @@ for (var i = 1; i < plantGuesses; i++){
 
   if (plantQuestion === myPlants){
     alert(`${myPlants} is the correct number!`);
+    score++;
     break;
   } else if(plantQuestion < myPlants){
     plantQuestion = parseInt(prompt('Sorry, too low.'));
@@ -89,8 +97,10 @@ var foodQuestion = prompt('What is a favorite food of mine?').toLowerCase();
 
 for (var i = 0; i < foodGuesses; i++){
 
+  // WIP - testing to correct flow if incorrect answer is entered first and correct answer entered second
   if (favoriteFoods[i] === foodQuestion){
     alert(`Yes, ${foodQuestion} is delicious!`);
+    score++;
     break;
   } else if (favoriteFoods[i] !== foodQuestion){
     prompt('Try again.');
@@ -100,3 +110,6 @@ for (var i = 0; i < foodGuesses; i++){
 if(i === foodGuesses){
   alert(`No, ${favoriteFoods} were the right options.`);
   }
+
+alert(`Enjoy my page, ${userName}! Your score is ${score} out of 7.`);
+console.log(score);
