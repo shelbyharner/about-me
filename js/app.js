@@ -80,3 +80,7 @@ for (var i = 1; i < plantGuesses; i++){
 if(i === plantGuesses){
     alert(`Wrong! ${myPlants} was the right answer.`);
   }
+
+var favoriteFoods = ['Sushi', 'Mac and Cheese', 'Pho', 'Pizza'];
+  // console.log(favoriteFoods);
+var foodQuestion = prompt('What is a favorite food of mine?');
