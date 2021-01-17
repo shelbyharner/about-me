@@ -32,6 +32,10 @@ ul {
     list-style-position: inside;
 }
 
+ol {
+    list-style-type: upper-roman;
+}
+
 img {
     float: right;
     width: 200px;
