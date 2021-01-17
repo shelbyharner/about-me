@@ -32,11 +32,6 @@ ul {
     list-style-position: inside;
 }
 
-ol {
-    list-style-type: lower-roman;
-    list-style-position: inside;
-}
-
 img {
     float: right;
     width: 200px;
