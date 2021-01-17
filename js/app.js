@@ -75,6 +75,8 @@ for (var i = 1; i < plantGuesses; i++){
     plantQuestion = parseInt(prompt('Sorry, too low.'));
   } else if(plantQuestion > myPlants){
     plantQuestion = parseInt(prompt('Oops, too high.'));
-    }
-  } alert(`Wrong! ${myPlants} was the right answer.`);
-  
+  }
+}
+if(i === plantGuesses){
+    alert(`Wrong! ${myPlants} was the right answer.`);
+  }
