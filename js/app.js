@@ -71,7 +71,7 @@ if(crafts === 'yes' || crafts === 'y') {
 var plantGuesses = 4;
 var myPlants = 9; 
 
-var plantQuestion = parseInt(prompt('How many houseplants do I have?'));
+var plantQuestion = parseInt(prompt('Enter a number. How many houseplants do I have?'));
 
 for (var i = 1; i < plantGuesses; i++){
 
