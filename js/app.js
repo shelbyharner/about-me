@@ -97,9 +97,8 @@ var favoriteFoods = ['sushi', 'mac and cheese', 'pho', 'pizza'];
 var foodQuestion = prompt('What is a favorite food of mine?').toLowerCase();
   // console.log(foodQuestion);
 
-for (var i = 0; i < foodGuesses; i++){
+for (var i = 1; i < foodGuesses; i++){
 
-  // WIP - testing to correct flow if incorrect answer is entered first and correct answer entered second
   if (favoriteFoods[i] === foodQuestion){
     alert(`Yes, ${foodQuestion} is delicious!`);
     score++;
