@@ -83,6 +83,8 @@ for (var i = 1; i < plantGuesses; i++){
     plantQuestion = parseInt(prompt('Sorry, too low.'));
   } else if(plantQuestion > myPlants){
     plantQuestion = parseInt(prompt('Oops, too high.'));
+  } else {
+    plantQuestion = parseInt(prompt('Try again. Enter a number.'));
   }
 }
 if(i === plantGuesses){
