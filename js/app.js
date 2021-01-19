@@ -94,22 +94,29 @@ if(i === plantGuesses){
 var foodGuesses = 6;
 var favoriteFoods = ['sushi', 'mac and cheese', 'pho', 'pizza'];
   // console.log(favoriteFoods);
-var foodQuestion = prompt('What is a favorite food of mine?').toLowerCase();
-  // console.log(foodQuestion);
+var rightAnswer = false;
 
-for (var i = 1; i < foodGuesses; i++){
+for (var j = 0; j < 6; j++){
+  var foodQuestion = prompt('What is a favorite food of mine?').toLowerCase();
 
-  if (favoriteFoods[i] === foodQuestion){
-    alert(`Yes, ${foodQuestion} is delicious!`);
-    score++;
-    break;
-  } else if (favoriteFoods[i] !== foodQuestion){
-    prompt('Try again.');
+  for (var k = 0; k < favoriteFoods.length; k++){
+    if (favoriteFoods[k] === foodQuestion){
+      alert(`Yes, ${foodQuestion} is delicious!`);
+      rightAnswer = true;
+      score++;
+      break;
+    }
   }
+  if (rightAnswer){
+    break;
+  } else {
+    alert(`Guess again. You have ${foodGuesses} chances left.`)
+  }
+  foodGuesses--;
 }
 
-if(i === foodGuesses){
-  alert(`No, ${favoriteFoods} were the right options.`);
+if(foodGuesses === 0){
+  alert(`No, you are out of guesses. ${favoriteFoods} were the right options.`);
   }
 
 alert(`Enjoy my page, ${userName}! Your score is ${score} out of 7.`);
