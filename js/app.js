@@ -28,99 +28,118 @@ function homeLocation() {
 homeLocation();
 
 // question two
-var tattoo = prompt('Do I have a tattoo?').toLowerCase();
+function tattoo() {
+    var response = prompt('Do I have a tattoo?').toLowerCase();
 
-if (tattoo === 'no' || tattoo === 'n') {
-    // console.log('Yes, that is correct!');
-    alert('Yes, that is correct!');
-    score++;
-} else {
-    alert('Nope, wrong.');
+    if (response === 'no' || response === 'n') {
+        // console.log('Yes, that is correct!');
+        alert('Yes, that is correct!');
+        score++;
+    } else {
+        alert('Nope, wrong.');
+    }
 }
+tattoo();
 
 // question three
-var siblings = prompt('Do I have siblings?').toLowerCase();
+function siblings() {
+    var response = prompt('Do I have siblings?').toLowerCase();
 
-if (siblings === 'yes' || siblings === 'y') {
-    // console.log('Yes!');
-    alert('Yes!');
-    score++;
-} else {
-    alert('Oops! No.');
+    if (response === 'yes' || response === 'y') {
+        // console.log('Yes!');
+        alert('Yes!');
+        score++;
+    } else {
+        alert('Oops! No.');
+    }
 }
+siblings();
 
 // question four
-var petType = prompt('Do I have a dog?').toLowerCase();
+function petType() {
+    var response = prompt('Do I have a dog?').toLowerCase();
 
-if (petType === 'no' || petType === 'n') {
-    // console.log('Great job!');
-    alert('Great job!');
-    score++;
-} else {
-    alert('Oh, no.');
+    if (response === 'no' || response === 'n') {
+        // console.log('Great job!');
+        alert('Great job!');
+        score++;
+    } else {
+        alert('Oh, no.');
+    }
 }
+petType();
+
 
 // question five
-var crafts = prompt('Do I love crafting?').toLowerCase();
+function crafts() {
+    var response = prompt('Do I love crafting?').toLowerCase();
 
-if (crafts === 'yes' || crafts === 'y') {
-    // console.log('Yes, ' + userName + '! Good answer!');
-    alert('Yes, ' + userName + '! Good answer!');
-    score++;
-} else {
-    alert('Sorry, ' + userName + '. Incorrect.');
+    if (response === 'yes' || response === 'y') {
+        // console.log('Yes, ' + userName + '! Good answer!');
+        alert('Yes, ' + userName + '! Good answer!');
+        score++;
+    } else {
+        alert('Sorry, ' + userName + '. Incorrect.');
+    }
 }
+crafts();
 
 var plantGuesses = 4;
 var myPlants = 9;
 
-var plantQuestion = parseInt(prompt('Enter a number. How many houseplants do I have?'));
+function plantQuestion() {
+    var response = parseInt(prompt('Enter a number. How many houseplants do I have?'));
 
-for (var i = 1; i < plantGuesses; i++) {
+    for (var i = 1; i < plantGuesses; i++) {
 
-    if (plantQuestion === myPlants) {
-        alert(`${myPlants} is the correct number!`);
-        score++;
-        break;
-    } else if (plantQuestion < myPlants) {
-        plantQuestion = parseInt(prompt('Sorry, too low.'));
-    } else if (plantQuestion > myPlants) {
-        plantQuestion = parseInt(prompt('Oops, too high.'));
-    } else {
-        plantQuestion = parseInt(prompt('Try again. Enter a number.'));
+        if (response === myPlants) {
+            alert(`${myPlants} is the correct number!`);
+            score++;
+            break;
+        } else if (response < myPlants) {
+            response = parseInt(prompt('Sorry, too low.'));
+        } else if (response > myPlants) {
+            response = parseInt(prompt('Oops, too high.'));
+        } else {
+            response = parseInt(prompt('Try again. Enter a number.'));
+        }
+    }
+    if (i === plantGuesses) {
+        alert(`Wrong! ${myPlants} was the right answer.`);
     }
 }
-if (i === plantGuesses) {
-    alert(`Wrong! ${myPlants} was the right answer.`);
-}
+plantQuestion();
 
 var foodGuesses = 6;
 var favoriteFoods = ['sushi', 'mac and cheese', 'pho', 'pizza'];
 // console.log(favoriteFoods);
 var rightAnswer = false;
 
-for (var j = 0; j < 6; j++) {
-    var foodQuestion = prompt('What is a favorite food of mine?').toLowerCase();
+function foodQuestion() {
+    var response = prompt('What is a favorite food of mine?').toLowerCase();
+    for (var j = 0; j < 6; j++) {
 
-    for (var k = 0; k < favoriteFoods.length; k++) {
-        if (favoriteFoods[k] === foodQuestion) {
-            alert(`Yes, ${foodQuestion} is delicious!`);
-            rightAnswer = true;
-            score++;
-            break;
+        for (var k = 0; k < favoriteFoods.length; k++) {
+            if (favoriteFoods[k] === response) {
+                alert(`Yes, ${favoriteFoods} is delicious!`);
+                rightAnswer = true;
+                score++;
+                break;
+            }
         }
+        if (rightAnswer) {
+            break;
+        } else {
+            alert(`Guess again. You have ${foodGuesses} chances left.`)
+        }
+        foodGuesses--;
     }
-    if (rightAnswer) {
-        break;
-    } else {
-        alert(`Guess again. You have ${foodGuesses} chances left.`)
-    }
-    foodGuesses--;
-}
 
-if (foodGuesses === 0) {
-    alert(`No, you are out of guesses. ${favoriteFoods} were the right options.`);
+    if (foodGuesses === 0) {
+        alert(`No, you are out of guesses. ${favoriteFoods} were the right options.`);
+    }
 }
+foodQuestion();
 
 alert(`Enjoy my page, ${userName}! Your score is ${score} out of 7.`);
 console.log(score);
